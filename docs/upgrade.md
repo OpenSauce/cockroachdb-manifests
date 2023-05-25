@@ -227,10 +227,14 @@ Then apply as normal (either by hand, or via kube-applier).
 
 ### Option 2: major version upgrade
 
+A new major release is performed every 6 months. 
+The major version number indicates the year of release followed by the release number, which will be either 1 or 2. 
+For example, at the time of writing, the latest major release is v23.1 (also written as v23.1.0).
+
 It is important to note that you can only move 1 major version at a time. That is to say, you would be able to upgrade
-from `v21.1` to `v21.2`, but you wouldn't be able to upgrade directly from `v19.2` to `v21.2`. If there is more than
+from `v21.1` to `v21.2`, but you wouldn't be able to upgrade directly from `v20.2` to `v21.2`. If there is more than
 one version between the current and target version, you need to upgrade one version at a time. For example, to move from
-`v19.2` to `v21.2`, you'd first upgrade to `v21.1`, and then upgrade to `v21.2`.
+`v20.2` to `v21.2`, you'd first upgrade to `v21.1`, and then upgrade to `v21.2`.
 
 #### Review upgrade guide
 
